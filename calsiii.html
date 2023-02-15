@@ -1,0 +1,81 @@
+<style>
+  
+  
+
+  btns {
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    text-align: left;}
+  
+  
+
+  
+  
+  
+  
+
+</style>
+<div class="cont">
+    <div class="calsi">
+    <h1>Calculator</h1>
+    <input type="text" id="inp" placeholder="Enter Value..." readonly="">
+    <table>
+    <div class="btns">
+        <tr>
+   <td> <button onclick="AT_add('+')">+</button></td>
+  <td>  <button onclick="AT_add('-')">-</button></td>
+    <td><button onclick="AT_add('*')">×</button></td>
+    <td><button onclick="AT_add('/')">÷</button></td>
+    <tr>
+   <td> <button onclick="AT_add(7)">7</button></td>
+   <td><button onclick="AT_add(8)">8</button></td>
+    <td><button onclick="AT_add(9)">9</button></td>
+    <td rowspan="10"><button style="height: 100px;background-color: blue; text-decoration: aliceblue;" onclick="exe()" >=</button></td>
+    
+    </tr>
+    <tr>
+   <td> <button onclick="AT_add(4)">4</button></td>
+   <td> <button onclick="AT_add(5)">5</button></td>
+   <td> <button onclick="AT_add(6)">6</button></td>
+    </tr>
+    <tr>
+    <td><button onclick="AT_add(1)">1</button></td>
+    <td><button onclick="AT_add(2)">2</button></td>
+   <td> <button onclick="AT_add(3)">3</button></td>
+    </tr>
+    <tr>
+    <td><button onclick="AT_add(0)">0</button></td>
+    <td><button onclick="AT_add('.')">.</button></td>
+    <td><button onclick="cls()">c</button></td>
+    
+        <tr>
+    
+    </tr>
+    
+    
+    </div>
+
+    
+
+</tr>
+    </div></div></table>
+    <script>var val=document.getElementById("inp");
+    
+    function AT_add(v){
+val.value+=v;
+}
+
+
+function cls(){
+val.value="";
+}
+
+function exe(){
+val.value=eval(val.value);
+}
+
+</script>    
